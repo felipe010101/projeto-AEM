@@ -1,0 +1,42 @@
+.cmp-navigation {}
+.cmp-nav-logo {
+  display: block;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 50px;
+}
+.cmp-nav-logo:hover {
+  color: #b3b3b3;
+}
+.cmp-navigation__group {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(75, 75, 90);
+}
+.cmp-navigation__item {
+    float: left;
+}
+.cmp-navigation__item--active {
+    background-color: rgb(50, 50, 70);
+}
+// .cmp-navigation__item--level-0 {}
+.cmp-navigation__item-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+.cmp-navigation__item-link:hover {
+    background-color: rgb(90, 90, 110);
+}

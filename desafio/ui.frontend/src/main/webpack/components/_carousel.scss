@@ -1,0 +1,56 @@
+.cmp-carousel {
+
+}
+.cmp-carousel__content {
+    padding-top: 60px;
+}
+.cmp-carousel__item {}
+.cmp-carousel__actions {}
+.cmp-carousel__action {}
+.cmp-carousel__action--disabled {}
+.cmp-carousel__action--previous {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.cmp-carousel__action--next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.cmp-carousel__action--pause {}
+.cmp-carousel__action--play {}
+.cmp-carousel__action-icon {}
+.cmp-carousel__action-text {}
+.cmp-carousel__indicators {
+    top: -37px;
+    position: relative;
+}
+.cmp-carousel__indicator {}
+.cmp-carousel__action--next:hover, .cmp-carousel__action--previous:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.aem-AuthorLayer-Preview .cq-Editable-dom--container, .aem-AuthorLayer-Preview .cq-Editable-dom--container.aem-GridColumn {
+    padding-top: 0px;
+    padding-bottom: -10px;
+}
