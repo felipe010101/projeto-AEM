@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Icons compoonent"
+          width="777px"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <container
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <iconsTitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Title"
+                            name="./iconsTitle"
+                            required="{Boolean}true"/>
+                    <iconsText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Text"
+                            name="./iconsText"
+                            required="{Boolean}true"/>
+                    <icons
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            composite="{Boolean}true"
+                            fieldLabel="Add Icons">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./icones">
+                            <items jcr:primaryType="nt:unstructured">
+                                <icontip
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Icon"
+                                        name="./icontip"
+                                        required="{Boolean}false">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <cubo
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Cubo"
+                                                value="/content/dam/desafio/icons8-cubos-de-açúcar-100.png"/>
+                                        <onda
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Onda"
+                                                value="/content/dam/desafio/icons8-ondas-do-mar-100.png"/>
+                                        <man
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Man"
+                                                value="/content/dam/desafio/icons8-walter-white-100.png"/>
+                                        <chapeu
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Chapeu"
+                                                value="/content/dam/desafio/icons8-chapéu-de-papai-noel-100.png"/>
+                                        <caneta
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Caneta"
+                                                value="/content/dam/desafio/icons8-caneta-marca-texto-100.png"/>
+                                    </items>
+                                </icontip>
+                            </items>
+                        </field>
+                    </icons>
+                </items>
+            </container>
+        </items>
+    </content>
+</jcr:root>

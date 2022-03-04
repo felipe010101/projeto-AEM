@@ -1,0 +1,29 @@
+<div data-sly-use.card="com.adobe.desafio.core.models.CardsModel"
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     class="cmp-cards swiffy-slider slider-item-show4">
+    <h1 class="cmp-card-titulo">${card.getSectionTitle}</h1>
+    <p class="cmp-card-texto">${card.getSectionText}</p>
+    <div class="">
+        <!-- Apresentações -->
+        <ul class="slider-container cmp-card-items">
+            <sly data-sly-list.item="${card.cardsMap}">
+                <li><div class="cmp-card-item" data-js="carousel-item">
+                    <div><img class="cmp-card-image" src="${item.cardimageref}"></div>
+                    <div class="cmp-card-content">
+                        <h4 class="cmp-card-title">${item.cardtitle}</h4>
+                        <p class="cmp-card-text">${item.cardtext}</p>
+                        <a href="${item.cardbutton}" class="cmp-card-button" role="button">Button</a>
+                    </div>
+                </div></li>
+            </sly>
+            ... mais slides aqui ..
+        </ul>
+        <!-- Botões de navegação -->
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    </div>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}"></sly>
+
+
+

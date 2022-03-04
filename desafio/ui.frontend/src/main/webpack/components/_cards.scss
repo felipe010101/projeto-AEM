@@ -1,0 +1,73 @@
+.cmp-cards{
+  background: rgb(32, 178, 170);
+}
+.cmp-card-items {
+  margin: 0px 175px 0px 175px;
+}
+
+.cmp-card-item {
+  background: white;
+  flex: 1;
+  margin: 50px 3px;
+  text-align: center;
+  width: auto;
+  height: 500px;
+}
+
+.cmp-card-item .cmp-card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cmp-card-image {
+  height: 250px;
+}
+
+.cmp-card-item .cmp-card-content {
+  padding: 10px 20px;
+}
+
+.cmp-card-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.cmp-card-text {
+  text-align: center;
+  margin: 10px 0;
+  color: black;
+}
+
+.cmp-card-button {
+    text-align: center;
+    background: red;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cmp-card-button:hover {
+    transform: scale(0.9);
+}
+
+.cmp-card-titulo {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  padding: 30px 10px 10px 10px;
+  margin-top: -7px;
+}
+
+.cmp-card-texto {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}

@@ -1,0 +1,3 @@
+#base=js
+
+swiffy-slider.min.js

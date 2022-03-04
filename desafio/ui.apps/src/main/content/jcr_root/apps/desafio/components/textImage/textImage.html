@@ -1,0 +1,28 @@
+<div data-sly-use.imgtext="com.adobe.desafio.core.models.TextImageModel"
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     class="cmp-img-text">
+    <sly data-sly-list.it="${imgtext.getImageText}">
+        <div data-sly-test="${it.imgtexttype == 'left'}" class="cmp-img-text-left">
+            <div class="cmp-img-text-left-container">
+                <img src="${it.textImgRef}" class="cmp-img-text-left-img" alt="Image Component">
+            </div>
+            <div class="cmp-img-text-left-content">
+                <h2 class="cmp-img-text-left-title">${it.titleimgtx}</h2>
+                <p class="cmp-img-text-left-text">${it.textimgtx}</p>
+            </div>
+        </div>
+        <div data-sly-test="${it.imgtexttype == 'right'}" class="cmp-img-text-right">
+            <div class="cmp-img-text-right-content">
+                <h2 class="cmp-img-text-right-title">${it.titleimgtx}</h2>
+                <p class="cmp-img-text-right-text">${it.textimgtx}</p>
+                <div class="cmp-img-text-right-buttons">
+                    <a href="${it.button01}" class="cmp-img-text-right-button-red" role="button">Button</a>
+                    <a href="${it.button02}" class="cmp-img-text-right-button-white" role="button">Button</a>
+                </div>
+            </div>
+            <div class="cmp-img-text-right-img-container">
+                <img src="${it.textImgRef}" class="cmp-img-text-right-img" alt="Image Component">
+            </div>
+        </div>
+    </sly>
+</div>

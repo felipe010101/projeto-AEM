@@ -1,0 +1,20 @@
+<div data-sly-use.slider="com.adobe.desafio.core.models.CarouselCustomModel"
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     class="cmp-carouselComp swiffy-slider slider-item-show1">
+    <ul class="slider-container slider-item-show1">
+        <sly data-sly-list.item="${slider.slide}">
+            <li>
+                <div class="cmp-carouselComp-container">
+                    <img src="${item.carouselimageref}" class="cmp-carouselComp-image">
+                    <div class="cmp-carouselComp-content">
+                        <h2 class="cmp-carouselComp-title">${item.carouseltitle}</h2>
+                        <p class="cmp-carouselComp-text">${item.carouseltext}</p>
+                    </div>
+                </div>
+            </li>
+        </sly>
+    </ul>
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+</div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}"></sly>

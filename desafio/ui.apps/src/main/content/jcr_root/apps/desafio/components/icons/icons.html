@@ -1,0 +1,21 @@
+<div data-sly-use.icon="com.adobe.desafio.core.models.IconModel"
+     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+     class="cmp-icons" xmlns="http://www.w3.org/1999/html">
+    <!--HEADER SECTION MOLECULE -->
+    <h1 class="cmp-icons-title">${icon.iconsTitle}</h1>
+    <p class="cmp-icons-text">${icon.iconsText}</p>
+    <!--HEADER SECTION MOLECULE -->
+
+    <!--ICONS BLOCK MOLECULE -->
+    <div class="cmp-icons-container">
+        <ul>
+            <div data-sly-list.icone="${icon.iconType}">
+                <i class="cmp-icons-item">
+                    <img class="cmp-icons-img" src="${icone}">
+                </i>
+            </div>
+        </ul>
+    </div>
+    <!--/ICONS BLOCK MOLECULE -->
+</div>
+<!-- /TEXT ICON COMPONENT -->

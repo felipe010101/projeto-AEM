@@ -1,0 +1,21 @@
+.cmp-teaserComp {}
+.cmp-teaserComp-container {
+  display: block;
+}
+.cmp-teaserComp-image {
+  margin-bottom: -7px;
+}
+.cmp-teaserComp-title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+.cmp-teaserComp-text {
+  text-align: center;
+}
+.cmp-teaserComp-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

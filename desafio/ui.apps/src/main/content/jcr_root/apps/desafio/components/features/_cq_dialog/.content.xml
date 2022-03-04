@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Features"
+          width="777px"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <container
+                    cq:showOnCreate="{Boolean}true"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <featureTitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Title"
+                            name="./featureTitle"
+                            required="{Boolean}true"/>
+                    <featureText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Text"
+                            name="./featureText"
+                            required="{Boolean}true"/>
+                    <features
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            composite="{Boolean}true"
+                            fieldLabel="Features">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./feature">
+                            <items jcr:primaryType="nt:unstructured">
+                                <type
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Type"
+                                        name="./featuretype"
+                                        required="{Boolean}false">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <left
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Left"
+                                                value="left"/>
+                                        <right
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Right"
+                                                value="right"/>
+                                    </items>
+                                </type>
+                                <title1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title 01"
+                                        name="./ftitle1"
+                                        required="{Boolean}true"/>
+                                <text1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Text 01"
+                                        name="./ftext1"
+                                        required="{Boolean}true"/>
+                                <title2
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title02"
+                                        name="./ftitle2"
+                                        required="{Boolean}true"/>
+                                <text2
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Text 02"
+                                        name="./ftext2"
+                                        required="{Boolean}true"/>
+                            </items>
+                        </field>
+                    </features>
+                </items>
+            </container>
+        </items>
+    </content>
+</jcr:root>

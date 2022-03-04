@@ -1,0 +1,75 @@
+.cmp-img-text-left {
+  display: flex;
+  height: 500px;
+  background: rgb(50, 50, 60);
+}
+.cmp-img-text-left-container {}
+.cmp-img-text-left-content {
+  padding: 150px 50px;
+}
+.cmp-img-text-left-title {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.cmp-img-text-left-text {
+  font-size: 20px;
+}
+.cmp-img-text-left-img {
+  height: 500px;
+  width: 850px;
+  object-fit: cover;
+}
+
+//------------------>--------------------------//
+
+.cmp-img-text-right {
+  display: flex;
+  height: 500px;
+  background: rgb(35, 35, 45);
+}
+.cmp-img-text-right-content {
+  padding: 150px 50px;
+}
+.cmp-img-text-right-title {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.cmp-img-text-right-text {
+  font-size: 20px;
+}
+.cmp-img-text-right-buttons {
+
+}
+.cmp-img-text-right-button-red {
+  color: white;
+  background-color: red;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+}
+.cmp-img-text-right-button-red:hover {
+  color: white;
+  background-color: pink;
+}
+.cmp-img-text-right-button-white {
+  color: black;
+  background-color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.cmp-img-text-right-button-white:hover {
+  color: white;
+  background-color: gray;
+}
+.cmp-img-text-right-img-container {
+  margin-left: 400px;
+}
+.cmp-img-text-right-img {
+  height: 500px;
+  width: 850px;
+  object-fit: cover;
+}

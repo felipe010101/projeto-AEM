@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+        	<tabs
+                 jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                 maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tituloTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Título"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                     	<items jcr:primaryType="nt:unstructured">
+                        	<titulo
+		                       jcr:primaryType="nt:unstructured"
+		                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                       fieldLabel="Título"
+		                       name="./titulo"/>
+                    	</items>
+                    </tituloTab>
+                    <menuTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Menu"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <menu
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Itens">
+                                <field
+                                     jcr:primaryType="nt:unstructured"
+                                     sling:resourceType="granite/ui/components/coral/foundation/container"
+                                     name="./itens">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <tituloMenu
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Título do Menu"
+                                            name="./tituloMenu"/>
+                                        <link
+					                        jcr:primaryType="nt:unstructured"
+					                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+					                        fieldLabel="Link"
+					                        name="./link"
+					                        rootPath="/content"/>
+                                    </items>
+                                </field>
+                            </menu>
+                        </items>
+                    </menuTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
